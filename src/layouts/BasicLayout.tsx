@@ -152,8 +152,8 @@ const BasicLayout: React.FC<BasicLayoutProps> = (props) => {
           return first ? (
             <Link to={paths.join('/')}>{route.breadcrumbName}</Link>
           ) : (
-              <span>{route.breadcrumbName}</span>
-            );
+            <span>{route.breadcrumbName}</span>
+          );
         }}
         footerRender={() => defaultFooterDom}
         menuDataRender={menuDataRender}
@@ -162,12 +162,11 @@ const BasicLayout: React.FC<BasicLayoutProps> = (props) => {
         {...settings}
       >
         <Authorized authority={authorized!.authority} noMatch={noMatch}>
-          <TabLayout {...props}>
-            {children}
-          </TabLayout>
+          <TabLayout {...props}>{children}</TabLayout>
         </Authorized>
       </ProLayout>
-      <SettingDrawer
+
+      {/* <SettingDrawer
         settings={settings}
         onSettingChange={(config) =>
           dispatch({
@@ -175,7 +174,7 @@ const BasicLayout: React.FC<BasicLayoutProps> = (props) => {
             payload: config,
           })
         }
-      />
+      /> */}
     </>
   );
 };

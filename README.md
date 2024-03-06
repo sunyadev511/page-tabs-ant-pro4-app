@@ -59,3 +59,17 @@ npm test
 ## More
 
 You can view full document on our [official website](https://pro.ant.design). And welcome any feedback in our [github](https://github.com/ant-design/ant-design-pro).
+
+##
+
+$ git clone https://github.com/MudOnTire/page-tabs-ant-pro4-app.git
+
+"name": "ant-design-pro", "version": "4.1.0",
+
+$ npm i --legacy-peer-deps
+
+## Modify in file package.json
+
+"start": "cross-env REACT_APP_ENV=Production NODE_OPTIONS=--openssl-legacy-provider umi dev",
+
+$ npm run start

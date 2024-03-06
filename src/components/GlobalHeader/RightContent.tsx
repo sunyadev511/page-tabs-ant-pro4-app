@@ -28,7 +28,7 @@ const GlobalHeaderRight: React.SFC<GlobalHeaderRightProps> = (props) => {
 
   return (
     <div className={className}>
-      <HeaderSearch
+      {/* <HeaderSearch
         className={`${styles.action} ${styles.search}`}
         placeholder="站内搜索"
         defaultValue="umi ui"
@@ -53,6 +53,7 @@ const GlobalHeaderRight: React.SFC<GlobalHeaderRightProps> = (props) => {
         //   //console.log('input', value);
         // }}
       />
+
       <Tooltip title="使用文档">
         <a
           style={{
@@ -66,7 +67,8 @@ const GlobalHeaderRight: React.SFC<GlobalHeaderRightProps> = (props) => {
           <QuestionCircleOutlined />
         </a>
       </Tooltip>
-      <NoticeIconView />
+      <NoticeIconView /> */}
+
       <Avatar menu />
       {REACT_APP_ENV && (
         <span>
